@@ -1,0 +1,59 @@
+body{
+    background-color: rgb(62, 61, 61);
+    margin:0;
+    padding:0;
+    display:flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content:center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    min-height: 100vh;
+}
+header{
+    background-color: rgba(0, 0, 0, 0.254);
+    width: 100%;
+}
+.cabecera{
+    height: 70px;
+    max-height: 70px;
+    min-width:320px;
+    display:block;
+    line-height: 4px;
+}
+.menu{
+    max-width:40px;
+    max-height: 40px;
+    padding: 15px;
+}
+.logo{
+    max-width: 280px;
+    max-height: 70px;
+}
+.present__name{
+    color:rgb(188, 188, 114);
+}
+.present{
+    text-align: center;
+    color:white;
+}
+.present p{
+    font-size: 15px;
+}
+.present h2{
+    font-size: 40px;
+}
+.butons{
+   margin:auto 30px;
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-evenly;
+}
+footer{
+    color:rgba(255, 255, 255, 0.44);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin:auto;
+}
+
