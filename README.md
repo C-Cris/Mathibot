@@ -1,8 +1,11 @@
 # Mathibot
 Mi Primera aplicación movil
 
-## Versiones:
+# Version Actual:
 
-### v0.1:
-Incluye
--Vista del apartado de Geometria
+## v0.11
+
+Incluye:
+
+- Vista del apartado de Geometria
+- Arreglos básicos de carpetas
