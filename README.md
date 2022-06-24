@@ -3,14 +3,20 @@ Mi Primera aplicación móvil
 
 # Version Actual:
 
+## v0.2 - Square Version
+
+Incluye:
+- Apartado del Cuadrado ya disponible:
+    - Calculos de perímetro y área
+    - Información Básica
+
+# Versiones Anteriores:
+
 ## v0.11
 
 Incluye:
 
-- Vista del apartado de Geometría
 - Arreglos básicos de carpetas
-
-# Versiones Anteriores:
 
 ## v0.1
 
