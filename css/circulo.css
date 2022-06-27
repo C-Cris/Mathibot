@@ -11,8 +11,13 @@ body{
     min-height: 100vh;
 }
 header{
-    background-color: rgba(0, 0, 0, 0.254);
+    background-color: rgb(28, 28, 28);
     width: 100%;
+    position: fixed;
+    z-index: 100;
+}
+.contenido{
+    margin:80px auto;
 }
 .cabecera{
     height: 70px;
@@ -35,6 +40,7 @@ header{
     margin: 10px;
     text-align: center;
     color:white;
+    padding:5px;
     background-color: rgba(0, 0, 0, 0.35);
 }
 .info h2{
@@ -43,6 +49,7 @@ header{
 /*numPI*/
 .numPI{
     margin: 10px;
+    padding:5px;
     text-align: center;
     color:white;
     background-color: rgba(0, 0, 0, 0.35); 
@@ -58,6 +65,12 @@ header{
     padding:10px;
 }
 /*Calc*/
+#result{
+    justify-content: space-between;
+}
+#error p{
+    margin: 150px auto;
+}
 .calc{
     margin: 10px;
     text-align: center;
@@ -73,7 +86,6 @@ header{
     border-radius: 20px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
 }
 .calc input{
     width: 130px;
@@ -117,7 +129,9 @@ button{
 }
 /*back*/
 footer{
-    margin: 10px auto;
+    display: flex;
+    justify-content: center;
+    margin-left:10px auto;
 }
 footer a{
     color:white;

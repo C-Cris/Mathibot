@@ -19,147 +19,149 @@
             <br>
         </div>
     </header>
-    <section class="info">
-        <h2>TRI&Aacute;NGULO</h2>
-        <p>El <b>tri&aacute;ngulo</b> es una figura cuya caracter&iacute;stica principal es que posee 3 lados, 
-        sin importar el tipo de tri&aacute;ngulo, esa regla es general</p>
-        <h2 style="color:greenyellow;">TIPOS DE TRI&Aacute;NGULOS:</h2>
-        <p>Existen varias figuras de este estilo, nos vamos a centrar en 4 de ellas:</p>
-        <h3 style="color:burlywood ;">Equil&aacute;tero</h3>
-        <img style="width: 100px; height: 100px;" src="images/equilatero.png" alt="equilatero">
-        <p>Sus tres lados son exactamente iguales</p>
-        <h3 style="color:burlywood ;">Escaleno</h3>
-        <img style="width: 100px; height: 100px;" src="images/escaleno.png" alt="escaleno">
-        <p>Los tres lados son diferentes</p>
-        <h3 style="color:burlywood ;">Is&oacute;seles</h3>
-        <img style="width: 90px; height: 120px;" src="images/isoseles.png" alt="isoseles">
-        <p>Dos lados iguales y una base</p>
-        <h3 style="color:burlywood ;">Rect&aacute;ngulo</h3>
-        <img style="width: 100px; height: 100px;" src="images/rectangulo.png" alt="rectangulo">    
-        <p>Posee un &aacute;ngulo de 90 grados</p>
-    </section>
-    <section class="forms">
-        <h2>F&oacute;rmulas del tri&aacute;ngulo:</h2>
-        <h3 style="color:burlywood;">Per&iacute;metro</h3>
-        <p style="color:rgba(255, 255, 255, 0.468);">
-            <i>Equil&aacute;tero = Lado * 3</i>
-            <br>
-            <i>Escaleno = LadoA + LadoB + LadoC</i>
-            <br>
-            <i>Is&oacute;seles = (LadoA * 2) + LadoB</i>
-        </p>
-        <h3 style="color:burlywood;">&Aacute;rea (Cualquier tri&aacute;ngulo)</h3>
-        <p style="color:rgba(255, 255, 255, 0.468);"><i>(Base * Altura) / 2</i></p>
-    </section>
-    <section class="exInfo">
-        <h2 style="color: red;">IMPORTANTE:</h2>
-        <p>En el caso del <b>tri&aacute;ngulo rect&aacute;ngulo</b>, los lados que conforman el &aacute;ngulo recto
-            son denominados <b style="color:burlywood;">CATETOS</b> mientras que el restante y el m&aacute;s largo se denomina 
-            <b style="color:burlywood;">HIPOTENUSA</b>
-        </p>
-    </section>
-    <section class="calc">
-        <h1>¡Pongamoslo a prueba!</h1>
-        <p>Selecciona una de las siguientes opciones y ofreceme los valores determinados:</p>
-        <br>
-        <div class="opciones">
-            <h2>Elige un tipo de tri&aacute;ngulo:</h2>
-            <select id="op" onchange="mostrarTriangulo()">
-                <option value="Equi" selected >Equilatero</option>
-                <option value="Esca">Escaleno</option>
-                <option value="Iso">Isoseles</option>
-                <option value="Rect">Rectangulo</option>
-            </select>
-        </div>
-        <br>
-        <!--CODIGO EQUILATERO-->
-        <div class="calcEqui" id="equilatero">
-            <h2>Equil&aacute;tero</h2>
-            <p>Ingrese valor de un Lado:</p>
-            <input class="calcule" type="number" id="input_Lado_Equi">
-            <p>Ingrese valor de la altura:</p>
-            <input class="calcule" type="number" id="input_Altura_Equi">
-            <br>
-            <button onClick="calculosEqui()">Calcular</button>
-            <section style="display: block;" id="show_equi">
-                <nav style="color:burlywood">Perimetro = </nav><label style="color:aqua" id="perimetro_Equi">-</label>
+    <div class="contenido">
+        <section class="info">
+            <h2>TRI&Aacute;NGULO</h2>
+            <p>El <b>tri&aacute;ngulo</b> es una figura cuya caracter&iacute;stica principal es que posee 3 lados, 
+            sin importar el tipo de tri&aacute;ngulo, esa regla es general</p>
+            <h2 style="color:greenyellow;">TIPOS DE TRI&Aacute;NGULOS:</h2>
+            <p>Existen varias figuras de este estilo, nos vamos a centrar en 4 de ellas:</p>
+            <h3 style="color:burlywood ;">Equil&aacute;tero</h3>
+            <img style="width: 100px; height: 100px;" src="images/equilatero.png" alt="equilatero">
+            <p>Sus tres lados son exactamente iguales</p>
+            <h3 style="color:burlywood ;">Escaleno</h3>
+            <img style="width: 100px; height: 100px;" src="images/escaleno.png" alt="escaleno">
+            <p>Los tres lados son diferentes</p>
+            <h3 style="color:burlywood ;">Is&oacute;seles</h3>
+            <img style="width: 90px; height: 120px;" src="images/isoseles.png" alt="isoseles">
+            <p>Dos lados iguales y una base</p>
+            <h3 style="color:burlywood ;">Rect&aacute;ngulo</h3>
+            <img style="width: 100px; height: 100px;" src="images/rectangulo.png" alt="rectangulo">    
+            <p>Posee un &aacute;ngulo de 90 grados</p>
+        </section>
+        <section class="forms">
+            <h2>F&oacute;rmulas del tri&aacute;ngulo:</h2>
+            <h3 style="color:burlywood;">Per&iacute;metro</h3>
+            <p style="color:rgba(255, 255, 255, 0.468);">
+                <i>Equil&aacute;tero = Lado * 3</i>
                 <br>
-                <nav style="color:burlywood">Area =</nav><label style="color:aqua" id="area_Equi">-</label>
-            </section>
-            <section style="display: none;" id="error_equi">
-                <p style="color:red;">Valores ingresados no validos</p>
-            </section>
-            
-        </div>
-        <!--CODIGO ESCALENO-->
-        <div class="calcEsca" id="escaleno">
-            <h2>Escaleno</h2>
-            <p>Ingrese valor del LadoA:</p>
-            <input class="calcule" type="number" id="input_LadoA_Esca">
-            <p>Ingrese valor del LadoB:</p>
-            <input class="calcule" type="number" id="input_LadoB_Esca">
-            <p>Ingrese valor de la Base:</p>
-            <input class="calcule" type="number" id="input_Base_Esca">
-            <p>Ingrese valor de la altura:</p>
-            <input class="calcule" type="number" id="input_Altura_Esca">
+                <i>Escaleno = LadoA + LadoB + LadoC</i>
+                <br>
+                <i>Is&oacute;seles = (LadoA * 2) + LadoB</i>
+            </p>
+            <h3 style="color:burlywood;">&Aacute;rea (Cualquier tri&aacute;ngulo)</h3>
+            <p style="color:rgba(255, 255, 255, 0.468);"><i>(Base * Altura) / 2</i></p>
+        </section>
+        <section class="exInfo">
+            <h2 style="color: red;">IMPORTANTE:</h2>
+            <p>En el caso del <b>tri&aacute;ngulo rect&aacute;ngulo</b>, los lados que conforman el &aacute;ngulo recto
+                son denominados <b style="color:burlywood;">CATETOS</b> mientras que el restante y el m&aacute;s largo se denomina 
+                <b style="color:burlywood;">HIPOTENUSA</b>
+            </p>
+        </section>
+        <section class="calc">
+            <h1>¡Pongamoslo a prueba!</h1>
+            <p>Selecciona una de las siguientes opciones y ofreceme los valores determinados:</p>
             <br>
-            <button onClick="calculosEsca()">Calcular</button>
+            <div class="opciones">
+                <h2>Elige un tipo de tri&aacute;ngulo:</h2>
+                <select id="op" onchange="mostrarTriangulo()">
+                    <option value="Equi" selected >Equilatero</option>
+                    <option value="Esca">Escaleno</option>
+                    <option value="Iso">Isoseles</option>
+                    <option value="Rect">Rectangulo</option>
+                </select>
+            </div>
             <br>
-            <section id="show_esca">
-                <nav style="color:burlywood">Perimetro = </nav><label style="color:aqua" id="per_Esca">-</label>
-                <nav style="color:burlywood">Area = </nav><label style="color:aqua" id="area_Esca">-</label>
-            </section>
-            <section id="error_esca" style="display: none;">
-                <p style="color:red;">Valores ingresados no validos</p>    
-            </section>
-        </div>
-        <!--CODIGO ISOSELES-->
-        <div class="calcIso" id="isoseles">
-            <h2>Is&oacute;seles</h2>
-            <p>Ingrese valor de un lado:</p>
-            <input class="calcule" type="number" id="input_Lado_Iso">
-            <p>Ingrese valor de la Base:</p>
-            <input class="calcule" type="number" id="input_Base_Iso">
-            <p>Ingrese valor de la altura:</p>
-            <input class="calcule" type="number" id="input_Altura_Iso">
+            <!--CODIGO EQUILATERO-->
+            <div class="calcEqui" id="equilatero">
+                <h2>Equil&aacute;tero</h2>
+                <p>Ingrese valor de un Lado:</p>
+                <input class="calcule" type="number" id="input_Lado_Equi">
+                <p>Ingrese valor de la altura:</p>
+                <input class="calcule" type="number" id="input_Altura_Equi">
+                <br>
+                <button onClick="calculosEqui()">Calcular</button>
+                <section style="display: block;" id="show_equi">
+                    <nav style="color:burlywood">Perimetro = </nav><label style="color:aqua" id="perimetro_Equi">-</label>
+                    <br>
+                    <nav style="color:burlywood">Area =</nav><label style="color:aqua" id="area_Equi">-</label>
+                </section>
+                <section style="display: none;" id="error_equi">
+                    <p style="color:red;">Valores ingresados no validos</p>
+                </section>
+                
+            </div>
+            <!--CODIGO ESCALENO-->
+            <div class="calcEsca" id="escaleno">
+                <h2>Escaleno</h2>
+                <p>Ingrese valor del LadoA:</p>
+                <input class="calcule" type="number" id="input_LadoA_Esca">
+                <p>Ingrese valor del LadoB:</p>
+                <input class="calcule" type="number" id="input_LadoB_Esca">
+                <p>Ingrese valor de la Base:</p>
+                <input class="calcule" type="number" id="input_Base_Esca">
+                <p>Ingrese valor de la altura:</p>
+                <input class="calcule" type="number" id="input_Altura_Esca">
+                <br>
+                <button onClick="calculosEsca()">Calcular</button>
+                <br>
+                <section id="show_esca">
+                    <nav style="color:burlywood">Perimetro = </nav><label style="color:aqua" id="per_Esca">-</label>
+                    <nav style="color:burlywood">Area = </nav><label style="color:aqua" id="area_Esca">-</label>
+                </section>
+                <section id="error_esca" style="display: none;">
+                    <p style="color:red;">Valores ingresados no validos</p>    
+                </section>
+            </div>
+            <!--CODIGO ISOSELES-->
+            <div class="calcIso" id="isoseles">
+                <h2>Is&oacute;seles</h2>
+                <p>Ingrese valor de un lado:</p>
+                <input class="calcule" type="number" id="input_Lado_Iso">
+                <p>Ingrese valor de la Base:</p>
+                <input class="calcule" type="number" id="input_Base_Iso">
+                <p>Ingrese valor de la altura:</p>
+                <input class="calcule" type="number" id="input_Altura_Iso">
+                <br>
+                <button onClick="calculosIso()">Calcular</button>
+                <br>
+                <section id="show_iso" style="display: block;">
+                    <nav style="color:burlywood">Perimetro = </nav><label style="color:aqua" id="per_Iso">-</label>
+                <nav style="color:burlywood">Area = </nav><label style="color:aqua" id="area_Iso">-</label>
+                </section>
+                <section id="error_iso" style="display: none;">
+                    <p style="color:red;">Valores ingresados no validos</p>  
+                </section>
+            </div>
             <br>
-            <button onClick="calculosIso()">Calcular</button>
+            <!--CODIGO RECTANGULO-->
+            <div class="calcRect" id="rectangulo">
+                <h2>Rect&aacute;ngulo</h2>
+                <p>Ingrese valor del Cateto A:</p>
+                <input class="calcule" type="number" id="input_catA_Rect">
+                <p>Ingrese valor del Cateto B:</p>
+                <input class="calcule" type="number" id="input_catB_Rect">
+                <p>Ingrese valor de la Hipotenusa:</p>
+                <input class="calcule" type="number" id="input_hipo_Rect">
+                <br>
+                <button onClick="calculosRect()">Calcular</button>
+                <br>
+                <section style="display: block;" id="show_rect">
+                    <nav style="color:burlywood">Perimetro = </nav><label style="color:aqua" id="per_rect">-</label>
+                    <nav style="color:burlywood">Area = </nav><label style="color:aqua" id="area_rect">-</label>
+                </section>
+                <section style="display: none;" id="error_rect">
+                    <p style="color:red;">Valores ingresados no validos</p>
+                </section>
+            </div>
             <br>
-            <section id="show_iso" style="display: block;">
-                <nav style="color:burlywood">Perimetro = </nav><label style="color:aqua" id="per_Iso">-</label>
-            <nav style="color:burlywood">Area = </nav><label style="color:aqua" id="area_Iso">-</label>
-            </section>
-            <section id="error_iso" style="display: none;">
-                <p style="color:red;">Valores ingresados no validos</p>  
-            </section>
-        </div>
+        </section>
         <br>
-        <!--CODIGO RECTANGULO-->
-        <div class="calcRect" id="rectangulo">
-            <h2>Rect&aacute;ngulo</h2>
-            <p>Ingrese valor del Cateto A:</p>
-            <input class="calcule" type="number" id="input_catA_Rect">
-            <p>Ingrese valor del Cateto B:</p>
-            <input class="calcule" type="number" id="input_catB_Rect">
-            <p>Ingrese valor de la Hipotenusa:</p>
-            <input class="calcule" type="number" id="input_hipo_Rect">
-            <br>
-            <button onClick="calculosRect()">Calcular</button>
-            <br>
-            <section style="display: block;" id="show_rect">
-                <nav style="color:burlywood">Perimetro = </nav><label style="color:aqua" id="per_rect">-</label>
-                <nav style="color:burlywood">Area = </nav><label style="color:aqua" id="area_rect">-</label>
-            </section>
-            <section style="display: none;" id="error_rect">
-                <p style="color:red;">Valores ingresados no validos</p>
-            </section>
-        </div>
-        <br>
-    </section>
-    <br>
-    <footer>
-        <a href="index.html">Volver</a>
-    </footer>
+        <footer>
+            <a href="index.html">Volver</a>
+        </footer>
+    </div>
     <script src="triangulo.js"></script>
 </body>
 </html>

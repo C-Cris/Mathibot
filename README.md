@@ -3,14 +3,20 @@ Mi Primera aplicación móvil
 
 # Version Actual:
 
+## v0.4.1 (fix)
+
+Arreglo:
+- Menu estático
+- Solución de rangos en los cálculos.
+
+# Versiones Anteriores:
+
 ## v0.4 - Triangule Version
 
 Incluye:
 - Apartado de Triángulos ya disponible:
     - 4 Tipos de triángulos con menú
     - Información de cada uno
-
-# Versiones Anteriores:
 
 ## v0.3 - Circle Version
 

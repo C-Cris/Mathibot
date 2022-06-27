@@ -10,7 +10,7 @@ body{
     min-height: 100vh;
 }
 header{
-    background-color: rgba(0, 0, 0, 0.254);
+    background-color: rgb(28, 28, 28);
     width: 100%;
 }
 .cabecera{
