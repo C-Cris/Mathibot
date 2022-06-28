@@ -3,13 +3,20 @@ Mi Primera aplicación móvil
 
 # Version Actual:
 
-## v0.4.1 (fix)
+## v0.4.2 (fix)
 
-Arreglo:
-- Menu estático
-- Solución de rangos en los cálculos.
+Arreglos:
+- ¡Mathi es más inteligente!
+    - Explicación más gráfica
+    - Cálculos más precisos
 
 # Versiones Anteriores:
+
+## v0.4.1 (fix)
+
+Arreglos:
+- Menu estático
+- Solución de rangos en los cálculos.
 
 ## v0.4 - Triangule Version
 

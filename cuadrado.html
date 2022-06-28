@@ -48,6 +48,16 @@
                     <option value="km">km</option>
                 </select>
             </div>
+            <section class="op_cant">
+                <h2>Elige cantidad de decimales</h2>
+                <p>Decimal actual: <label id="actual" style="color:aqua"> -</label></p>
+                <input style="font-size: 16px;" type="number" placeholder="Max. 10 dígitos" class="calcule" id="cant_num">
+                <button style="font-size: 17px; margin:auto;" onClick="cantidad()">Confirmar</button>
+                <!--POSIBLES MENSAJES-->
+                <p style="color:red; display: none; margin:auto;" id="error_cant">Se excedió el límite</p>
+                <p style="color:rgb(0, 255, 26); display: none; margin: auto;" id="ok_cant">Cambios realizados</p>
+                <p style="color:rgb(242, 255, 0); display: none; margin: auto;" id="equal_cant">Ese valor esta elegido</p>
+            </section>
             <br><br>
             <div class="mediciones">
                 <h2>Per&iacute;metro y &Aacute;rea</h2>

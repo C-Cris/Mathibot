@@ -43,12 +43,22 @@
             <h2>F&oacute;rmulas del c&iacute;rculo:</h2>
             <h3 style="background-color:rgba(0, 0, 0, 0.41);"><i>Diametro = radio * 2</i></h3>
             <h3 style="background-color:rgba(0, 0, 0, 0.41);"><i>&Aacute;rea = radio^2 * PI(π)</i></h3>
-            <h3 style="background-color:rgba(0, 0, 0, 0.41);"><i>Per&iacute;metro = Diametro * PI(π)</i></h3>
+            <h3 style="background-color:rgba(0, 0, 0, 0.41);"><i>Circunferencia = Diametro * PI(π)</i></h3>
         </section>
         <section class="calc">
             <h1>¡Pongamoslo a prueba!</h1>
             <p>Selecciona una de las siguientes opciones y ofreceme los valores determinados:</p>
             <br>
+            <section class="op_cant">
+                <h2>Elige cantidad de decimales</h2>
+                <p>Decimal actual: <label id="actual" style="color:aqua"> -</label></p>
+                <input style="font-size: 16px;" type="number" placeholder="Max. 10 dígitos" class="calcule" id="cant_num">
+                <button style="font-size: 17px; margin:auto;" onClick="cantidad()">Confirmar</button>
+                <!--POSIBLES MENSAJES-->
+                <p style="color:red; display: none; margin:auto;" id="error_cant">Se excedió el límite</p>
+                <p style="color:rgb(0, 255, 26); display: none; margin: auto;" id="ok_cant">Cambios realizados</p>
+                <p style="color:rgb(242, 255, 0); display: none; margin: auto;" id="equal_cant">Ese valor esta elegido</p>
+            </section>
             <div class="calculos">
                 <h2>Diametro - Per&iacute;metro y &Aacute;rea</h2>
                 <p>Ingrese el valor de su radio:</p>

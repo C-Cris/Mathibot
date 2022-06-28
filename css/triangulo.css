@@ -77,7 +77,7 @@ header{
     justify-content: space-between;
 }
 .opciones{
-    height: 300px; 
+    height: 590px; 
 }
 .calcEqui{
     height: 500px;
@@ -89,7 +89,7 @@ header{
     height: 700px;
 }
 .calcRect{
-    height: 700px;
+    height: 750px;
 }
 select{
     color: white;
