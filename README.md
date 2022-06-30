@@ -3,14 +3,18 @@ Mi Primera aplicación móvil
 
 # Version Actual:
 
+## v0.5 - Menu preferencias
+Incluye:
+- Opciones (Aún en desarrollo)
+
+# Versiones Anteriores:
+
 ## v0.4.2 (fix)
 
 Arreglos:
 - ¡Mathi es más inteligente!
     - Explicación más gráfica
     - Cálculos más precisos
-
-# Versiones Anteriores:
 
 ## v0.4.1 (fix)
 
@@ -39,7 +43,7 @@ Incluye:
     - Calculos de perímetro y área
     - Información Básica
 
-## v0.11
+## v0.1.1
 
 Incluye:
 

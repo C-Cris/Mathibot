@@ -95,7 +95,9 @@ function calculosEsca(){
     let ladoA = Number(document.getElementById('input_LadoA_Esca').value)
     let ladoB = Number(document.getElementById('input_LadoB_Esca').value)
     let S = (base+ladoA+ladoB)/2
-    let alt = Number(Math.sqrt(S*(S-base)*(S-ladoA)*(S-ladoB))*(2/base)).toFixed(cant_actual);
+    let alt = Number(Math.sqrt(S*(S-base)*(S-ladoA)*(S-ladoB))*(2/base));
+    let per = ladoA+ladoB+base;
+    let area = ((base*alt) / 2)
     
     if(ladoA===ladoB || ladoA===base || ladoB===base || ladoA<=0 || ladoB<=0 || base<=0 || alt<=0){
         document.getElementById('show_esca').style.display = 'none'
@@ -104,16 +106,33 @@ function calculosEsca(){
         document.getElementById('show_esca').style.display = 'block'
         document.getElementById('error_esca').style.display = 'none'
 
-        document.getElementById('altura_Esca').innerHTML = alt;
-        document.getElementById('per_Esca').innerHTML = (ladoA + ladoB + base)
-        document.getElementById('area_Esca').innerHTML = ((base*alt) / 2).toFixed(cant_actual); 
+        if(Number.isInteger(per)){
+            document.getElementById('per_Esca').innerHTML = (ladoA + ladoB + base)
+        }else{
+            document.getElementById('per_Esca').innerHTML = (ladoA + ladoB + base).toFixed(cant_actual)
+        }
+
+        if(Number.isInteger(alt)){
+            document.getElementById('altura_Esca').innerHTML = alt;
+        }else{
+            document.getElementById('altura_Esca').innerHTML = alt.toFixed(cant_actual);
+        }
+        
+        if(Number.isInteger(area)){
+            document.getElementById('area_Esca').innerHTML = (base*alt) / 2;
+        }else{
+            document.getElementById('area_Esca').innerHTML = ((base*alt) / 2).toFixed(cant_actual);
+        }
     }
 }
 
 function calculosIso(){
     let lado = Number(document.getElementById('input_Lado_Iso').value)
     let base = Number(document.getElementById('input_Base_Iso').value)
-    let alt = Number(Math.sqrt((base/2)**2+(lado**2))).toFixed(2);
+    let alt = Number(Math.sqrt((base/2)**2+(lado**2)));
+    let per = Number(((lado*2) + base));
+    let area = Number(((base*alt) / 2));
+
     if(lado<=0 || base<=0 || lado==base){
         document.getElementById('show_iso').style.display='none'
         document.getElementById('error_iso').style.display='block'
@@ -121,9 +140,23 @@ function calculosIso(){
         document.getElementById('show_iso').style.display='block'
         document.getElementById('error_iso').style.display='none'
 
-        document.getElementById('altura_Iso').innerHTML = alt;
-        document.getElementById('per_Iso').innerHTML = ((lado*2) + base)
-        document.getElementById('area_Iso').innerHTML = ((base*alt) / 2).toFixed(cant_actual);
+        if(Number.isInteger(alt)){
+            document.getElementById('altura_Iso').innerHTML = alt;
+        }else{
+            document.getElementById('altura_Iso').innerHTML = alt.toFixed(cant_actual);
+        }
+
+        if(Number.isInteger(per)){
+            document.getElementById('per_Iso').innerHTML = ((lado*2) + base)
+        }else{
+            document.getElementById('per_Iso').innerHTML = ((lado*2) + base).toFixed(cant_actual)
+        }
+
+        if(Number.isInteger(area)){
+            document.getElementById('area_Iso').innerHTML = ((base*alt) / 2); 
+        }else{
+            document.getElementById('area_Iso').innerHTML = ((base*alt) / 2).toFixed(cant_actual);
+        }
     }
 }
 
@@ -131,6 +164,9 @@ function calculosRect(){
     let catetoAd = Number(document.getElementById('input_catA_Rect').value)
     let catetoOp = Number(document.getElementById('input_catB_Rect').value)
     let hipo = Number(document.getElementById('input_hipo_Rect').value)
+    let alt = Number(((catetoAd*catetoOp)/hipo))
+    let per = Number((catetoAd + catetoOp + hipo))
+    let area = Number(((catetoAd*catetoOp)/2))
     
     if(catetoAd<=0 || catetoOp<=0 || hipo<=0){
         document.getElementById('show_rect').style.display = 'none'
@@ -146,9 +182,24 @@ function calculosRect(){
     else{
         document.getElementById('show_rect').style.display = 'block'
         document.getElementById('error_rect').style.display = 'none'
-        document.getElementById('altura_rect').innerHTML = ((catetoAd*catetoOp)/hipo).toFixed(cant_actual);
-        document.getElementById('per_rect').innerHTML = (catetoAd + catetoOp + hipo);
-        document.getElementById('area_rect').innerHTML = ((catetoAd*catetoOp)/2).toFixed(cant_actual);
+
+        if(Number.isInteger(alt)){
+            document.getElementById('altura_rect').innerHTML = ((catetoAd*catetoOp)/hipo);
+        }else{
+            document.getElementById('altura_rect').innerHTML = ((catetoAd*catetoOp)/hipo).toFixed(cant_actual);
+        }
+
+        if(Number.isInteger(per)){
+            document.getElementById('per_rect').innerHTML = (catetoAd + catetoOp + hipo);
+        }else{
+            document.getElementById('per_rect').innerHTML = (catetoAd + catetoOp + hipo).toFixed(cant_actual);
+        }
+
+        if(Number.isInteger(area)){
+            document.getElementById('area_rect').innerHTML = ((catetoAd*catetoOp)/2);
+        }else{
+            document.getElementById('area_rect').innerHTML = ((catetoAd*catetoOp)/2).toFixed(cant_actual);
+        }
     }
 }
 
