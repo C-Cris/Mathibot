@@ -3,11 +3,16 @@ Mi Primera aplicación móvil
 
 # Version Actual:
 
+## v0.5.1
+Incluye:
+- Pantalla de carga con frases azar
+- Optimización general
+
+# Versiones Anteriores:
+
 ## v0.5 - Menu preferencias
 Incluye:
 - Opciones (Aún en desarrollo)
-
-# Versiones Anteriores:
 
 ## v0.4.2 (fix)
 
