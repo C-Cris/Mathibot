@@ -3,12 +3,17 @@ Mi Primera aplicación móvil
 
 # Version Actual:
 
+## v0.5.2
+Incluye:
+- ¡Apartado ejercicios al Azar en el menu ya disponible! Con ejercicios y mejoras básicas
+- Optimización general de archivos
+
+# Versiones Anteriores:
+
 ## v0.5.1
 Incluye:
 - Pantalla de carga con frases azar
 - Optimización general
-
-# Versiones Anteriores:
 
 ## v0.5 - Menu preferencias
 Incluye:

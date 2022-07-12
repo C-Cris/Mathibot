@@ -1,6 +1,6 @@
 fraseAzar();
 function fraseAzar(){
-    let azar = aleatorio(1,10)
+    let azar = aleatorio(1,12)
     console.log(azar)
     if(azar===1){
         document.getElementById('F1').style.display = 'block'
@@ -23,6 +23,10 @@ function fraseAzar(){
         document.getElementById('F9').style.display = 'block'
     }else if (azar===10){
         document.getElementById('F10').style.display = 'block'
+    }else if (azar===11){
+        document.getElementById('F11').style.display = 'block'
+    }else if (azar===12){
+        document.getElementById('F12').style.display = 'block'
     }
 }        
 function aleatorio(inferior, superior) {

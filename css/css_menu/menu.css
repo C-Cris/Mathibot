@@ -96,6 +96,14 @@ footer a{
 #p4{
     color:white;
 }
+.frase{
+    color:aqua;
+}
+.frase p{
+    text-align: center;
+    font-size: 30px;
+    margin:30px auto;
+}
 
 
 

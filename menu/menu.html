@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/menu.css">
+    <link rel="stylesheet" href="../css/css_menu/menu.css">
     <title>Document</title>
 </head>
 <body>
@@ -13,68 +13,68 @@
         <div class="ajustes" id="item1">
             <div class="botonIz">
                 <button onclick="ajustesIz()">
-                    <img style="width:40px;height: 40px;" src="../images/flecha_iz.png" alt="">
+                    <img style="width:40px;height: 40px;" src="../images/img_menu_general/flecha_iz.png" alt="">
                 </button>
             </div>
             <div class="fondo">
-                <button class="butonBG">
-                    <img style="width:200px;height: 200px;" src="../images/opciones.png" alt="">
-                </button>
+                <a class="butonBG">
+                    <img style="width:200px;height: 200px;" src="../images/img_menu_general/opciones.png" alt="">
+                </a>
             </div>
             <div class="botonDe">
                 <button onclick="ajustesDe()">
-                    <img style="width:40px;height: 40px;" src="../images/flecha_de.png" alt="">
+                    <img style="width:40px;height: 40px;" src="../images/img_menu_general/flecha_de.png" alt="">
                 </button>
             </div>
         </div>
         <div style="display:none" class="azar" id="item2">
             <div class="botonIz">
                 <button onclick="azarIz()">
-                    <img style="width:40px;height: 40px;" src="../images/flecha_iz.png" alt="">
+                    <img style="width:40px;height: 40px;" src="../images/img_menu_general/flecha_iz.png" alt="">
                 </button>
             </div>
             <div class="fondo">
-                <button class="butonBG">
-                    <img style="width:200px;height: 200px;" src="../images/model_azar.png" alt="">
-                </button>
+                <a href="azar_ap.html" class="butonBG">
+                    <img style="width:200px;height: 200px;" src="../images/img_menu_general/model_azar.png" alt="">
+                </a>
             </div>
             <div class="botonDe">
                 <button onclick="azarDe()">
-                    <img style="width:40px;height: 40px;" src="../images/flecha_de.png" alt="">
+                    <img style="width:40px;height: 40px;" src="../images/img_menu_general/flecha_de.png" alt="">
                 </button>
             </div>
         </div>
         <div style="display:none" class="unknown1" id="item3">
             <div class="botonIz">
                 <button onclick="unknown1Iz()">
-                    <img style="width:40px;height: 40px;" src="../images/flecha_iz.png" alt="">
+                    <img style="width:40px;height: 40px;" src="../images/img_menu_general/flecha_iz.png" alt="">
                 </button>
             </div>
             <div class="fondo">
                 <button class="butonBG">
-                    <img style="width:200px;height: 200px;" src="../images/model_proximamente.png" alt="">
+                    <img style="width:200px;height: 200px;" src="../images/img_menu_general/model_proximamente.png" alt="">
                 </button>
             </div>
             <div class="botonDe">
                 <button onclick="unknown1De()">
-                    <img style="width:40px;height: 40px;" src="../images/flecha_de.png" alt="">
+                    <img style="width:40px;height: 40px;" src="../images/img_menu_general/flecha_de.png" alt="">
                 </button>
             </div>
         </div>
         <div style="display:none" class="unknown2" id="item4">
             <div class="botonIz">
                 <button onclick="unknown2Iz()">
-                    <img style="width:40px;height: 40px;" src="../images/flecha_iz.png" alt="">
+                    <img style="width:40px;height: 40px;" src="../images/img_menu_general/flecha_iz.png" alt="">
                 </button>
             </div>
             <div class="fondo">
                 <button class="butonBG">
-                    <img style="width:200px;height: 200px;" src="../images/model_proximamente.png" alt="">
+                    <img style="width:200px;height: 200px;" src="../images/img_menu_general/model_proximamente.png" alt="">
                 </button>
             </div>
             <div class="botonDe">
                 <button onclick="unknown2De()">
-                    <img style="width:40px;height: 40px;" src="../images/flecha_de.png" alt="">
+                    <img style="width:40px;height: 40px;" src="../images/img_menu_general/flecha_de.png" alt="">
                 </button>
             </div>
         </div>
@@ -85,10 +85,16 @@
         <p id="p3">.</p>
         <p id="p4">.</p>
     </div>
+    <div class="frase">
+        <p id="f1" style="display:block">Ajustes</p>
+        <p id="f2" style="display:none">Desaf&iacute;o al azar</p>
+        <p id="f3" style="display:none">En desarrollo</p>
+        <p id="f4" style="display:none">En desarrollo</p>
+    </div>
     <br><br>
     <footer>
         <a href="../index.html">Volver</a>
     </footer>
-    <script src="../js/menu.js"></script>
+    <script src="../js/js_menu/menu.js"></script>
 </body>
 </html>
