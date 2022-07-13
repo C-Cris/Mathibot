@@ -27,6 +27,8 @@ function fraseAzar(){
         document.getElementById('F11').style.display = 'block'
     }else if (azar===12){
         document.getElementById('F12').style.display = 'block'
+    }else if (azar===13){
+        document.getElementById('F13').style.display = 'block'
     }
 }        
 function aleatorio(inferior, superior) {

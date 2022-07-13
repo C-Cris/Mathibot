@@ -3,12 +3,18 @@ Mi Primera aplicación móvil
 
 # Version Actual:
 
+## v0.6 - Rectangule Version
+Incluye:
+- Apartado del rectángulo ya disponible:
+    - Descripción textual y gráfica
+- Menu mejorado con mas opciones en desarrollo
+
+# Versiones Anteriores:
+
 ## v0.5.2
 Incluye:
 - ¡Apartado ejercicios al Azar en el menu ya disponible! Con ejercicios y mejoras básicas
 - Optimización general de archivos
-
-# Versiones Anteriores:
 
 ## v0.5.1
 Incluye:

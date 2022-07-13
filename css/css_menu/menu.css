@@ -32,7 +32,7 @@ h2{
     align-items: center;
     padding:10px; 
 }
-.unknown1{
+.info{
     width: 90%;
     height: 40%;
     margin: 20% auto;
@@ -41,7 +41,16 @@ h2{
     align-items: center;
     padding:10px; 
 }
-.unknown2{
+.filtro{
+    width: 90%;
+    height: 40%;
+    margin: 20% auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:10px; 
+}
+.varita{
     width: 90%;
     height: 40%;
     margin: 20% auto;
@@ -94,6 +103,9 @@ footer a{
     color:white;
 }
 #p4{
+    color:white;
+}
+#p5{
     color:white;
 }
 .frase{

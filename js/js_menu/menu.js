@@ -1,10 +1,10 @@
 function ajustesIz(){
     document.getElementById('item1').style.display = 'none'
-    document.getElementById('item4').style.display = 'flex'
+    document.getElementById('item5').style.display = 'flex'
     document.getElementById('p1').style.color = 'white'
-    document.getElementById('p4').style.color = 'aqua'
+    document.getElementById('p5').style.color = 'aqua'
     document.getElementById('f1').style.display = 'none'
-    document.getElementById('f4').style.display = 'block'
+    document.getElementById('f5').style.display = 'block'
 }
 function ajustesDe(){
     document.getElementById('item1').style.display = 'none'
@@ -30,7 +30,7 @@ function azarDe(){
     document.getElementById('f2').style.display = 'none'
     document.getElementById('f3').style.display = 'block'
 }
-function unknown1Iz(){
+function infoIz(){
     document.getElementById('item3').style.display = 'none'
     document.getElementById('item2').style.display = 'flex'
     document.getElementById('p3').style.color = 'white'
@@ -38,7 +38,7 @@ function unknown1Iz(){
     document.getElementById('f3').style.display = 'none'
     document.getElementById('f2').style.display = 'block'
 }
-function unknown1De(){
+function infoDe(){
     document.getElementById('item3').style.display = 'none'
     document.getElementById('item4').style.display = 'flex'
     document.getElementById('p3').style.color = 'white'
@@ -46,7 +46,7 @@ function unknown1De(){
     document.getElementById('f3').style.display = 'none'
     document.getElementById('f4').style.display = 'block'
 }
-function unknown2Iz(){
+function lupaIz(){
     document.getElementById('item4').style.display = 'none'
     document.getElementById('item3').style.display = 'flex'
     document.getElementById('p4').style.color = 'white'
@@ -54,11 +54,27 @@ function unknown2Iz(){
     document.getElementById('f4').style.display = 'none'
     document.getElementById('f3').style.display = 'block'
 }
-function unknown2De(){
+function lupaDe(){
     document.getElementById('item4').style.display = 'none'
-    document.getElementById('item1').style.display = 'flex'
+    document.getElementById('item5').style.display = 'flex'
     document.getElementById('p4').style.color = 'white'
-    document.getElementById('p1').style.color = 'aqua'
+    document.getElementById('p5').style.color = 'aqua'
     document.getElementById('f4').style.display = 'none'
+    document.getElementById('f5').style.display = 'block'
+}
+function varitaIz(){
+    document.getElementById('item5').style.display = 'none'
+    document.getElementById('item4').style.display = 'flex'
+    document.getElementById('p5').style.color = 'white'
+    document.getElementById('p4').style.color = 'aqua'
+    document.getElementById('f5').style.display = 'none'
+    document.getElementById('f4').style.display = 'block'
+}
+function varitaDe(){
+    document.getElementById('item5').style.display = 'none'
+    document.getElementById('item1').style.display = 'flex'
+    document.getElementById('p5').style.color = 'white'
+    document.getElementById('p1').style.color = 'aqua'
+    document.getElementById('f5').style.display = 'none'
     document.getElementById('f1').style.display = 'block'
 }
