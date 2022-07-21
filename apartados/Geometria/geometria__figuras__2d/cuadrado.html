@@ -4,45 +4,37 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/css_apartados/rectangulo.css">
-    <title>Apartado - Rectangulo</title>
+    <link rel="stylesheet" href="../../../css/css_apartados/css_apartados_geometria/css_apartados_geometria_2d/cuadrado.css">
+    <title>Apartado - Cuadrado</title>
 </head>
 <body>
     <header>
         <div class="cabecera">
             <a href="#">
-                <img class="menu" src="../images\menu.png" alt="img_menu">
+                <img class="menu" src="../../../images\menu.png" alt="img_menu">
             </a>
-            <a href="../index.html">
-                <img class="logo" src="../images\logo.png" alt="logotipo" class="logo">
+            <a href="../../../index.html">
+                <img class="logo" src="../../../images\logo.png" alt="logotipo" class="logo">
             </a>
             <br>
         </div>
     </header>
     <div class="contenido">
         <section class="info">
-            <h2>RECT&Aacute;NGULO</h2>
-            <p>El rect&aacute;ngulo es una figura similar al cuadrado, con la diferencia de que posee <b>DOS PARES</b> de lados iguales</p>
-            <p>Un par es m&aacute;s largo que el otro</p>
+            <h2>CUADRADO</h2>
+            <p>El cuadrado es una figura cuya caracter&iacute;stica principal es que sus 4 lados tienen <b>
+                La MISMA longitud</b>.</p>
+            <p>Por lo tanto, es posible calcular su <b>PER&Iacute;METRO y &Aacute;REA</b> con solo conocer <b>UN LADO.</b></p>
             <h2 style="color:red">¡IMPORTANTE!</h2>
             <p>Cuando hablamos del per&iacute;metro es la unidad pero si hablamos acerca del
                 &aacute;rea, se utiliza la <b style="color:burlywood">unidad^2 (cuadrados).</b>
             </p>
-            <p>Cabe recalcar que aqu&iacute; se denomina al lado inferior <b style="color:burlywood">base</b> y a su perpendicular 
-                <b style="color:burlywood">altura</b>
-            </p>
-            <img  style="width:300px; height: 300px;" src="../images/img_rectangulo/fundamentos_rectangulo.png" alt="fundamentos_rectangulo">
-            <br/>
-            <p>Un tip extra es que si trazamos una l&iacute;nea diagonal de un extremo a otro, obtendremos dos tri&aacute;ngulos
-                rect&aacute;ngulos iguales, de ahi el porque la f&oacute;rmula de dichos tri&aacute;ngulos es "Base x altura dividido 2"
-            </p>
-            <img  style="width:300px; height: 300px;" src="../images/img_rectangulo/fundamentos_rectangulo_2.png" alt="fundamentos_rectangulo_2">
         </section>
         <section class="form">
-            <h1>F&oacute;rmulas del Rect&aacute;ngulo:</h1>
-            <div><i>Per&iacute;metro = (Lado A x 2) + (Lado B x 2)</i></div>
+            <h1>F&oacute;rmulas del Cuadrado:</h1>
+            <div><i>Per&iacute;metro = Lado x 4</i></div>
             <br>
-            <div><i>&Aacute;rea = Base x Altura</i></div>
+            <div><i>&Aacute;rea = Lado^2 (Lado x Lado)</i></div>
         </section>
         <section class="calc">
             <h1>¡Pongamoslo a prueba!</h1>
@@ -69,11 +61,8 @@
             <br><br>
             <div class="mediciones">
                 <h2>Per&iacute;metro y &Aacute;rea</h2>
-                <p>Ingresar valor de la base:</p>
-                <input class="cuadrado" type="number" id="ladoBase">
-                <br>
-                <p>Ingresar valor de la altura:</p>
-                <input class="cuadrado" type="number" id="ladoAltura">
+                <p>Ingresar valor de un lado:</p>
+                <input class="cuadrado" type="number" id="lado">
                 <br>
                 <button onclick="general()">Calcular</button>
                 <br>
@@ -92,10 +81,10 @@
         </section>
         <br>
         <footer>
-            <a href="../index.html">Volver</a>
+            <a href="figuras_2d.html">Volver</a>
         </footer>
     </div>
     <br>
-    <script src="../js/js_apartados/rectangulo.js"></script>
+    <script src="../../../js/js_apartados/js_apartados_geometria/js_apartados_geometria_2d/cuadrado.js"></script>
 </body>
 </html>

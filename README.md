@@ -3,13 +3,18 @@ Mi Primera aplicación móvil
 
 # Version Actual:
 
+## v0.6.1 - Geometria
+Incluye:
+- Nuevo orden, todo comprimido a geometria
+- Proximamente apartados nuevos dentro de geometría
+
+# Versiones Anteriores:
+
 ## v0.6 - Rectangule Version
 Incluye:
 - Apartado del rectángulo ya disponible:
     - Descripción textual y gráfica
 - Menu mejorado con mas opciones en desarrollo
-
-# Versiones Anteriores:
 
 ## v0.5.2
 Incluye:

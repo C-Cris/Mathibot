@@ -6,11 +6,10 @@
 }
 .contenedor_loader{
     margin:10% auto;
-    z-index:9999;
     width: 90%;
     height: 90%;
-    transition: all 1.3s;
-    display:flex;
+    transition:all 1.3s;
+    display:none;
     align-items: center;
     justify-content: center;
     flex-direction: column;
@@ -42,7 +41,6 @@
     left:-30px;
     border-radius: 50%;
 }
-
 @keyframes girar{
     17%{
         border-bottom-right-radius: 3px;

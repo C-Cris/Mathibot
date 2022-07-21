@@ -29,6 +29,8 @@ function fraseAzar(){
         document.getElementById('F12').style.display = 'block'
     }else if (azar===13){
         document.getElementById('F13').style.display = 'block'
+    }else if (azar===14){
+        document.getElementById('F14').style.display = 'block'
     }
 }        
 function aleatorio(inferior, superior) {
@@ -38,15 +40,14 @@ function aleatorio(inferior, superior) {
     return inferior + aleatorio;
 }
 window.addEventListener('load', () => {
+    const content = document.querySelector('#content')
+    const contenedor_loader = document.querySelector('.contenedor_loader')
+    contenedor_loader.style.display = 'flex'
     setTimeout(function(){
-        const content = document.querySelector('#content')
-        const contenedor_loader = document.querySelector('.contenedor_loader')
-        contenedor_loader.style.visibility = 'hidden'
         contenedor_loader.style.opacity = 0
         setTimeout(function(){
             contenedor_loader.style.display = 'none'
             content.style.display = 'flex'
-            content.style.opacity = 100
         },2000)
     },2000)
 })

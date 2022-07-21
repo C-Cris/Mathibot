@@ -14,52 +14,67 @@ header{
     background-color: rgb(28, 28, 28);
     width: 100%;
     position: fixed;
-    z-index: 100;
+    z-index: 300;
 }
 .contenido{
-    margin:80px auto;
+    margin: 80px auto;
 }
 .cabecera{
-    height: 70px;
-    max-height: 70px;
-    min-width:320px;
-    display:block;
-    line-height: 4px;
+    height: 100%;
+    display:flex;
+    justify-content: space-between;
+    padding: 10px;
+    margin:auto;
+}
+.cabecera a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.cabecera img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .menu{
-    max-width:40px;
-    max-height: 40px;
-    padding: 15px;
+    width: 40px;
+    height: 40px;
 }
 .logo{
-    max-width: 280px;
-    max-height: 70px;
+    height: 65px;
+    width: 275px;
 }
-/*info*/
+/* Apartado de Info.*/
 .info{
-    background-color: rgba(0, 0, 0, 0.371);
-    color: white;
-    margin: 15px;
+    color:white;
     text-align: center;
-    padding:5px;
+    margin:10px;
+    padding:4px;
+    background-color: rgba(0, 0, 0, 0.247);
 }
-.exInfo{
-    background-color: rgba(0, 0, 0, 0.371);
-    color: white;
-    margin: 15px;
-    text-align: center;
-    padding:5px;
+.info h2{
+    font-size: 30px;
 }
-/*Formulas*/
-.forms{
-    background-color: rgba(0, 0, 0, 0.371);
-    color: white;
-    margin: 15px;
+/* Apartado de Formulas*/
+.form{
+    color:white;
     text-align: center;
-    padding:5px;
+    margin:10px;
+}
+.form div{
     font-size: 20px;
+    background-color: rgba(0, 0, 0, 0.131);
+    padding:10px;
 }
-/*calculos*/
+/*Calculos*/
+#error p{
+    display: flex;
+    margin:150px auto;
+}
+#results{
+    display:flex;
+    justify-content: space-between;
+}
 .calc{
     color:white;
     text-align: center;
@@ -67,6 +82,7 @@ header{
 }
 .calc div{
     background-color: rgba(0, 0, 0, 0.284);
+    height: 350px;
     max-width: 290px;
     margin: auto;
     padding: 25px;
@@ -74,34 +90,8 @@ header{
     border-radius: 20px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
 }
-.opciones{
-    height: 590px; 
-}
-.calcEqui{
-    height: 500px;
-}
-.calcEsca{
-    height: 750px;
-}
-.calcIso{
-    height: 700px;
-}
-.calcRect{
-    height: 750px;
-}
-select{
-    color: white;
-    background-color: black;
-    margin: auto;
-    width: 60%;
-    height: 20%;
-    text-align: center;
-    font-size: 20px;
-    outline: none;
-}
-.calcule{
+.calc input{
     width: 130px;
     height: 50px;
     margin: auto;
@@ -116,8 +106,8 @@ select{
 button{
     width: 110px;
     height: 40px;
-    margin: 30px;
-    background-color: rgba(0, 0, 0, 0.321);
+    margin: auto;
+    background-color: black;
     color: white;
     text-align: center;
     font-size: 20px;
@@ -125,24 +115,36 @@ button{
     border: 2px white solid;
     outline: none;
 }
-/*triangulos_toggle*/
-#equilatero{
-    display:block;
+.op_cant{
+    height: 400px;
+    max-width: 320px;
+    background-color: rgba(0, 0, 0, 0.284);
+    padding: 10px;
+    display: flex;
+    margin:20px auto;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    border-radius: 20px;
 }
-#escaleno{
-    display:none;
+select{
+    color: white;
+    background-color: black;
+    margin: auto;
+    width: 60%;
+    height: 20%;
+    text-align: center;
+    font-size: 20px;
+    outline: none;
 }
-#isoseles{
-    display:none;
-}
-#rectangulo{
-    display:none;
+.lineal{
+    display: inline-block;
 }
 /*Back*/
 footer{
     display: flex;
     justify-content: center;
-    margin: 20px auto;
+    margin: 10px auto;
 }
 footer a{
     color:white;
